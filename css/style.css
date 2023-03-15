@@ -78,3 +78,6 @@ li i, input:not(#add_text){
 .new{
     position: relative;
 }
+.line_throu{
+    text-decoration: line-through;
+}

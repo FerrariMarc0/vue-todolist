@@ -6,20 +6,19 @@ const { createApp } = Vue
     data() {
         return {
         newTodo: '',
-        message: 'Compila la lista',
         todos: [
             
             {
                 id: 0,
-                title: '',
-                completed: 'false'
+                text: '',
+                done: 'true'
             }
         ]
     }
     },
     methods:{
         addTodo(){
-            this.todos.push({title: this.newTodo, completed: 'false', id: 1})
+            this.todos.push({text: this.newTodo, done: 'false', id: 1})
             this.newTodo='';
         },
         deleteLine(todo){

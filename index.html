@@ -21,7 +21,7 @@
 
             <div class="container">
                 <ul class="row">
-                    <li v-for="todo in todos"><input type="checkbox" v-model="todo.completed" name="selected" id="sel">{{todo.title}}<i @click="deleteLine(todo)" class="fa-solid fa-xmark"></i></li>
+                    <li v-for="todo in todos" :class="{'line_throu':todos.done}"><input type="checkbox"  @click="todos.done = !todos.done" v-model="todo.done" name="selected" id="sel">{{todo.text}}<i @click="deleteLine(todo)" class="fa-solid fa-xmark"></i></li>
                 </ul>
             </div>
         </div>
